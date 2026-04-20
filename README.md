@@ -23,4 +23,4 @@ A simple frontend-only QR code generator built with React, TypeScript, and Vite.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/qr-code-tools.git
+git clone https://github.com/Graniten40/qr-code-tools.git
