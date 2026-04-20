@@ -4,7 +4,7 @@ function Home() {
   return (
     <section>
       <div className="hero">
-        <h1>Create QR codes for links, WiFi, email, phone, and SMS</h1>
+        <h1>Free QR Code Generator for URL, WiFi, Email, Phone and SMS</h1>
         <p>
           A clean QR tool site with multiple subpages. Fast, simple, and easy to
           expand with more tools later.
