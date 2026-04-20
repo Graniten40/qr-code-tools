@@ -266,6 +266,13 @@ button {
   font-size: 1.3rem;
 }
 
+.content-block h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
 .content-block p {
   color: #475569;
   margin-bottom: 14px;
