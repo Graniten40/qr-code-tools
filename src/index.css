@@ -259,19 +259,30 @@ button {
   margin-bottom: 14px;
 }
 
-.content-block {
+.page {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: #0f172a;
 }
 
-.content-block h2 {
-  margin-top: 28px;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+.page h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
 }
 
-.content-block p {
+.page h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.page p {
   color: #475569;
-  margin-bottom: 14px;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 .footer-links {
