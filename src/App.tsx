@@ -8,8 +8,6 @@ import WifiQr from './pages/WifiQr'
 import EmailQr from './pages/EmailQr'
 import PhoneQr from './pages/PhoneQr'
 import SmsQr from './pages/SmsQr'
-import Privacy from './pages/Privacy'
-import Terms from './pages/Terms'
 
 function App() {
   return (
