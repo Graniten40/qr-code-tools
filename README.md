@@ -1,14 +1,14 @@
 # QR Code Tools
 
-A simple frontend-only QR code generator built with React, TypeScript, and Vite.
+A frontend-only QR code generator built with React, TypeScript, and Vite.
 
 ## Features
 
-- URL QR codes
-- WiFi QR codes
-- Email QR codes
-- Phone QR codes
-- SMS QR codes
+- Generate QR codes for URLs
+- Generate QR codes for WiFi
+- Generate QR codes for email
+- Generate QR codes for phone numbers
+- Generate QR codes for SMS
 - Clean multi-page layout with React Router
 
 ## Tech Stack
@@ -17,10 +17,12 @@ A simple frontend-only QR code generator built with React, TypeScript, and Vite.
 - TypeScript
 - Vite
 - React Router
+- Cloudflare Pages
+- Cloudflare Web Analytics
 
 ## Getting Started
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/Graniten40/qr-code-tools.git
+git clone https://github.com/your-username/qr-code-tools.git
