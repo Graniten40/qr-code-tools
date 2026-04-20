@@ -22,8 +22,6 @@ function App() {
           <Route path="/email-qr" element={<EmailQr />} />
           <Route path="/phone-qr" element={<PhoneQr />} />
           <Route path="/sms-qr" element={<SmsQr />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
         </Routes>
       </main>
 
