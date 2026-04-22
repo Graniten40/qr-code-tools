@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   useEffect(() => {
-    document.title = 'Free QR Code Generator for URL, WiFi, Email, Phone and SMS'
+    document.title =
+      'Free QR Code Generator for URL, WiFi, Email, Phone, SMS, WhatsApp, vCard, Maps, Event and Text'
 
     const description =
-      'Create free QR codes for URLs, WiFi, email, phone numbers, and SMS. Fast, simple, mobile-friendly, and works directly in your browser.'
+      'Create free QR codes for URLs, WiFi, email, phone numbers, SMS, WhatsApp, vCards, Google Maps, events, and plain text. Fast, simple, mobile-friendly, and works directly in your browser.'
 
     let meta = document.querySelector('meta[name="description"]')
 
@@ -22,11 +23,15 @@ function Home() {
   return (
     <section className="content-block">
       <div className="hero">
-        <h1>Free QR Code Generator for URL, WiFi, Email, Phone and SMS</h1>
+        <h1>
+          Free QR Code Generator for URL, WiFi, Email, Phone, SMS, WhatsApp,
+          vCard, Maps, Event and Text
+        </h1>
         <p>
           Create QR codes online for websites, wireless access, email, phone
-          numbers, and text messages. Fast, simple, and easy to use directly in
-          your browser.
+          numbers, text messages, WhatsApp chats, contact cards, map locations,
+          events, and plain text. Fast, simple, and easy to use directly in your
+          browser.
         </p>
 
         <p className="helper-text">
@@ -59,16 +64,43 @@ function Home() {
           <h2>SMS QR</h2>
           <p>Create QR codes for ready-made text messages and quick contact actions.</p>
         </Link>
+
+        <Link to="/whatsapp-qr" className="card">
+          <h2>WhatsApp QR</h2>
+          <p>Create QR codes that open a WhatsApp chat with a pre-filled message.</p>
+        </Link>
+
+        <Link to="/vcard-qr" className="card">
+          <h2>vCard QR</h2>
+          <p>Create QR codes for digital contact cards with name, phone, email, and company info.</p>
+        </Link>
+
+        <Link to="/google-maps-qr" className="card">
+          <h2>Google Maps QR</h2>
+          <p>Create QR codes that open a location, business, or address in Google Maps.</p>
+        </Link>
+
+        <Link to="/event-qr" className="card">
+          <h2>Event QR</h2>
+          <p>Create QR codes for event details like title, location, date, and time.</p>
+        </Link>
+
+        <Link to="/plain-text-qr" className="card">
+          <h2>Plain Text QR</h2>
+          <p>Create QR codes for notes, instructions, codes, or any plain text content.</p>
+        </Link>
       </div>
 
       <section className="content-block">
         <h2>What is a QR code generator?</h2>
         <p>
           A QR code generator lets you create scannable codes that open a link,
-          connect to WiFi, start a phone call, open an email, or prepare an SMS
-          message. QR codes are widely used on posters, product packaging,
-          menus, business cards, signs, and printed marketing materials because
-          they make it easy for people to access information with a smartphone.
+          connect to WiFi, start a phone call, open an email, prepare an SMS,
+          launch a WhatsApp chat, show contact details, open a map location, or
+          store plain text. QR codes are widely used on posters, product
+          packaging, menus, business cards, signs, and printed marketing
+          materials because they make it easy for people to access information
+          with a smartphone.
         </p>
 
         <h2>What can you create on this site?</h2>
@@ -78,26 +110,31 @@ function Home() {
           website, a <Link to="/wifi-qr">WiFi QR code</Link> for quick network
           access, an <Link to="/email-qr">Email QR code</Link> for pre-filled
           messages, a <Link to="/phone-qr">Phone QR code</Link> for direct
-          calling, and an <Link to="/sms-qr">SMS QR code</Link> for ready-made
-          text messages.
+          calling, an <Link to="/sms-qr">SMS QR code</Link> for ready-made text
+          messages, a <Link to="/whatsapp-qr">WhatsApp QR code</Link> for chat,
+          a <Link to="/vcard-qr">vCard QR code</Link> for contact details, a{' '}
+          <Link to="/google-maps-qr">Google Maps QR code</Link> for locations,
+          an <Link to="/event-qr">Event QR code</Link> for calendar details, and
+          a <Link to="/plain-text-qr">Plain Text QR code</Link> for any text.
         </p>
 
         <h2>Why use QR codes?</h2>
         <p>
           QR codes reduce friction. Instead of typing a long website address,
-          WiFi password, email address, or phone number manually, users can scan
-          a code and get where they need to go immediately. This makes QR codes
-          useful for businesses, events, customer support, printed materials,
-          hospitality, restaurants, retail, and marketing campaigns.
+          WiFi password, email address, phone number, or map location manually,
+          users can scan a code and get where they need to go immediately. This
+          makes QR codes useful for businesses, events, customer support,
+          printed materials, hospitality, restaurants, retail, and marketing
+          campaigns.
         </p>
 
         <h2>Popular use cases</h2>
         <p>
           Use QR codes on restaurant menus, event posters, hotel guest
           information, office reception desks, business cards, product labels,
-          flyers, brochures, and social or marketing campaigns. They work well
-          anywhere you want to connect offline materials with quick mobile
-          actions.
+          flyers, brochures, packaging, and social or marketing campaigns. They
+          work well anywhere you want to connect offline materials with quick
+          mobile actions.
         </p>
 
         <h2>Frequently asked questions</h2>
@@ -126,8 +163,13 @@ function Home() {
           <Link to="/url-qr">URL QR</Link> for websites,{' '}
           <Link to="/wifi-qr">WiFi QR</Link> for network access,{' '}
           <Link to="/email-qr">Email QR</Link> for contact messages,{' '}
-          <Link to="/phone-qr">Phone QR</Link> for direct calls, and{' '}
-          <Link to="/sms-qr">SMS QR</Link> for text-based contact flows.
+          <Link to="/phone-qr">Phone QR</Link> for direct calls,{' '}
+          <Link to="/sms-qr">SMS QR</Link> for text-based contact flows,{' '}
+          <Link to="/whatsapp-qr">WhatsApp QR</Link> for chat links,{' '}
+          <Link to="/vcard-qr">vCard QR</Link> for contact sharing,{' '}
+          <Link to="/google-maps-qr">Google Maps QR</Link> for locations,{' '}
+          <Link to="/event-qr">Event QR</Link> for schedules, and{' '}
+          <Link to="/plain-text-qr">Plain Text QR</Link> for simple text content.
         </p>
       </section>
     </section>

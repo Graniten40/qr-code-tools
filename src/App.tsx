@@ -11,6 +11,12 @@ import SmsQr from './pages/SmsQr'
 import Privacy from './pages/PrivacyPolicy'
 import Terms from './pages/TermsOfUse'
 
+import WhatsAppQr from './pages/WhatsAppQr'
+import VcardQr from './pages/VcardQr'
+import GoogleMapsQr from './pages/GoogleMapsQr'
+import EventQr from './pages/EventQr'
+import PlainTextQr from './pages/PlainTextQr'
+
 function App() {
   return (
     <>
@@ -24,6 +30,11 @@ function App() {
           <Route path="/email-qr" element={<EmailQr />} />
           <Route path="/phone-qr" element={<PhoneQr />} />
           <Route path="/sms-qr" element={<SmsQr />} />
+          <Route path="/whatsapp-qr" element={<WhatsAppQr />} />
+          <Route path="/vcard-qr" element={<VcardQr />} />
+          <Route path="/google-maps-qr" element={<GoogleMapsQr />} />
+          <Route path="/event-qr" element={<EventQr />} />
+          <Route path="/plain-text-qr" element={<PlainTextQr />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
         </Routes>
