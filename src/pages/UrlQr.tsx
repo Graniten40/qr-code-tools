@@ -23,6 +23,20 @@ function UrlQr() {
     meta.setAttribute('content', description)
   }, [])
 
+  const getQrValue = () => {
+    const trimmedUrl = url.trim()
+
+    if (!trimmedUrl) {
+      return ' '
+    }
+
+    if (trimmedUrl.startsWith('https://') || trimmedUrl.startsWith('http://')) {
+      return trimmedUrl
+    }
+
+    return `https://${trimmedUrl}`
+  }
+
   const downloadQr = () => {
     const canvas = qrRef.current?.querySelector('canvas')
     if (!canvas) return
@@ -30,7 +44,7 @@ function UrlQr() {
     const pngUrl = canvas.toDataURL('image/png')
     const downloadLink = document.createElement('a')
     downloadLink.href = pngUrl
-    downloadLink.download = 'url-qr.png'
+    downloadLink.download = 'url-qr-code.png'
     downloadLink.click()
   }
 
@@ -45,6 +59,7 @@ function UrlQr() {
         <label htmlFor="url" className="sr-only">
           Website URL
         </label>
+
         <input
           id="url"
           type="url"
@@ -62,8 +77,12 @@ function UrlQr() {
       </div>
 
       <div className="qr-box" ref={qrRef}>
-        <QRCodeCanvas value={url || ' '} size={220} />
+        <QRCodeCanvas value={getQrValue()} size={220} />
       </div>
+
+      <p className="helper-text">
+        QR value: {getQrValue()}
+      </p>
 
       <p className="helper-text">
         Works for websites, landing pages, product links, menus, and printed materials.
